@@ -1,0 +1,10 @@
+version: '3' #version of docker compose we want to use 
+services: 
+  web: 
+    build: .
+    ports: 
+      - "5000:5000"
+    volumes: 
+      - .:/app
+#terminal: docker compose up
+
